@@ -18,7 +18,7 @@
         },
         methods:{
             getCoins: function() {
-                return axios('https://raw.githubusercontent.com/ForkMaps/cryptonote/master/dist/coins.json')
+                return axios('https://raw.githubusercontent.com/Sajo8/cryptonote/master/dist/coins.json')
                 .then((response) => {
                     let coins = response.data;
                     buildTree(coins);
@@ -114,8 +114,8 @@
     const coinNode = function (key, coin) {
 
         this.id = key;
-        this.label = coin.coin;
-        this.title = coin.name;
+        this.label = coin.name;
+        this.title = coin.coin;
         this.shadow = {
             enabled: true,
             color: 'rgba(0,0,0,0.5)',

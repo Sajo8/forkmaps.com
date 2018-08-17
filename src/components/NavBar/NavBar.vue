@@ -5,7 +5,7 @@
             <span class="app-title"></span>
             <router-link to="/" class="navbar-link" exact>
                 <div class="link-wrapper">
-                    <span>Coin List</span>
+                    <span>Streamer List</span>
                 </div>
             </router-link>
             <!--
@@ -15,11 +15,11 @@
             -->
             <router-link to="/forkMap" class="navbar-link" exact>
                 <div class="link-wrapper">
-                    <span>Fork Map</span>
+                    <span>Game Map</span>
                 </div>
             </router-link>
             <div class="nav-divider"></div>
-            <a href="https://github.com/ForkMaps" target="_blank" class="navbar-link nav-social">
+            <a href="https://github.com/Sajo8" target="_blank" class="navbar-link nav-social">
                 <i class="fab fa-github"></i>
             </a>
             <!--<a href="https://discord.gg/dcsZdPp" target="_blank" class="navbar-link">
@@ -113,7 +113,9 @@
             display: none;
         }
     }
-    @media screen and (orientation:landscape) {
-
+    @media all and (min-width: 1800px) {
+        .nav-content {
+            max-width: 1600px;
+        }
     }
 </style>

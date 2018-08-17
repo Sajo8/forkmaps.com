@@ -23,7 +23,7 @@
         },
         methods:{
             getCoins: function() {
-                return axios('https://raw.githubusercontent.com/jerme404/forkmaps-json-cryptonote/master/dist/coins.json')
+                return axios('https://raw.githubusercontent.com/Sajo8/cryptonote/master/dist/coins.json')
                 .then((response) => {
                     let coins = response.data;
                     this.nestedCoins = buildTree(coins);
