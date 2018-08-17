@@ -2,14 +2,15 @@
     <div class="list-page">
         <div class="header-wrapper">
             <div class="list-header">
-                <span class="header-item">{{coinList.length}} CryptoNote coins</span>
+                <span class="header-item">{{coinList.length - 1}} Twitch Turtle(s)</span>
                 <div class="input-wrapper">
                     
                 </div>
             </div>
         </div>
         <div class="list-content">
-            <coin-card v-for="(coin, key, index) in  coinList" :coin="coin" :key="key">
+            <coin-card v-for="(coin, key, index) in  coinList" :coin="coin" :key="key"
+                v-if="!coin.forkedFrom">
             </coin-card>
         </div>
     </div>
