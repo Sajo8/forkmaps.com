@@ -10,6 +10,11 @@
                 <span>Games:</span>
                 <span>{{coin.game}}</span>
                 <span>{{coin.game2}}</span>
+                <span>{{coin.game3}}</span>
+                <span>{{coin.game4}}</span>
+
+
+
             </div>
         </div>
         <div class="coin-links">
